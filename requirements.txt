@@ -1,0 +1,21 @@
+#Core data handling and numerical operations
+pandas==1.4.2
+numpy==1.22.3
+
+#Deep learning and machine learning
+torch==1.11.0
+scikit-learn==1.0.2
+
+#Data visualization
+matplotlib==3.5.1
+seaborn==0.11.2
+
+#Feature Engineering
+scipy==1.8.0
+scikit-image==0.19.2
+
+#Model interpretability
+captum==0.5.0
+
+#Progress bars
+tqdm==4.64.0
