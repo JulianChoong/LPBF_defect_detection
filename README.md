@@ -33,40 +33,9 @@ The project follows a modular structure to separate data, notebooks, and models.
 - notebooks/: Contains the Jupyter notebooks for each project stage.
 
 
-Directory Structure
 
 ![directory structure](./images/directory_structure.png)
-📁 lpbf_defect_project/
- │
- ├── 📁 data/
- │   │
- │   ├── 📂 raw/
- │   │   ├── Coupon_metadata.csv                            <-- Your single source of truth for labels and coordinates.
- │   │   │
- │   │   └── 📂 Build_01_SS316LCubes_date/                  <-- You place the raw .txt files from the machine here.
- │   │       ├── Packet data for layer 1, laser 4.txt
- │   │       └── ...
- │   │
- │   ├── 📂 interim/
- │   │   └── 📂 B1_segmented/                               <-- Automatically created by notebook 01.
- │   │       ├── 📂 B1_CP01/
- │   │       │   └── layer_0001.csv
- │   │       └── ...
- │   │
- │   ├── 📂 processed/
- │   │   └── dataset.csv                                    <-- The final, clean dataset, created by notebook 02.
- │   │
- │   └── 📂 unlabeled/
- │       └── new_build_data.csv                             <-- You place new, unlabeled files here for prediction.
- │
- ├── 📂 models/
- │   └── best_supervised_model.pth                          <-- The best trained model, saved automatically by notebook 03.
- │
- └── 📂 notebooks/
-     ├── 01_data_segmentation.ipynb      <-- Reads from `raw`, writes to `interim`.
-     ├── 02_feature_engineering.ipynb    <-- Reads from `interim`, writes to `processed`.
-     ├── 03_LSTM_model_training.ipynb    <-- Reads from `processed`, writes to `models`.
-     └── 04_prediction.ipynb             <-- Reads from `models` and `unlabeled`, outputs predictions.
+
 
 
 
