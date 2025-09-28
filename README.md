@@ -35,6 +35,7 @@ The project follows a modular structure to separate data, notebooks, and models.
 
 Directory Structure
 
+![directory structure](./images/directory_structure.png)
 📁 lpbf_defect_project/
  │
  ├── 📁 data/
